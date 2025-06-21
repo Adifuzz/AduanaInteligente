@@ -1,0 +1,180 @@
+/* === VARIABLES GLOBALES === */
+:root {
+  --azul-principal: rgb(10, 36, 122);
+  --blanco: #ffffff;
+  --hover-blanco: #e0efff;
+  --texto-normal: #ffffff;
+  --gris-claro: #f3f3f3;
+  --borde-suave: 8px;
+  --font-principal: 'Inter', sans-serif;
+}
+
+/* === ESTILO BASE === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-principal);
+  background-color: var(--gris-claro);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: var(--azul-principal);
+  color: var(--texto-normal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: var(--texto-normal);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--hover-blanco);
+}
+
+/* === FORMULARIO LOGIN === */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.login-box {
+  background-color: var(--blanco);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: var(--azul-principal);
+  margin-bottom: 30px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: var(--borde-suave);
+  font-size: 16px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  border: none;
+  border-radius: var(--borde-suave);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #142f84;
+}
+
+.login-box .link {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.login-box .link a {
+  color: var(--azul-principal);
+  text-decoration: none;
+}
+
+.login-box .link a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  padding: 40px 80px 20px;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--blanco);
+  border-bottom: 1px solid #ffffff22;
+  padding-bottom: 6px;
+}
+
+.footer-col p,
+.footer-col li {
+  margin: 6px 0;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col a {
+  color: var(--blanco);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #c2dbff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ffffffaa;
+  border-top: 1px solid #ffffff22;
+  padding-top: 12px;
+}
